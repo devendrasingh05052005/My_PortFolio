@@ -51,21 +51,19 @@ const devendra = {
 
 ## 🛠️ Technology Arsenal
 
-<div align="center">
+### 🧠 AI & Data Science
+![AI & Data Science](https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,scipy)
 
-### AI & Data Science
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,scipy" />
+### 🖥️ Backend & Databases
+![Backend & Databases](https://skillicons.dev/icons?i=django,sqlite,postgres,mysql,redis)
 
-### Backend & Databases
-<img src="https://skillicons.dev/icons?i=django,sqlite,postgres,mysql,redis" />
+### 🎨 Frontend & Tools
+![Frontend & Tools](https://skillicons.dev/icons?i=html,css,js,tailwind,git,github,docker,vscode)
 
-### Frontend & Tools
-<img src="https://skillicons.dev/icons?i=html,css,js,tailwind,git,github,docker,vscode" />
+### 💻 Programming Languages
+![Programming Languages](https://skillicons.dev/icons?i=python,cpp,js,sql)
 
-### Programming Languages
-<img src="https://skillicons.dev/icons?i=python,cpp,js,sql" />
-
-</div>
+---
 
 ## 📊 GitHub Analytics
 
