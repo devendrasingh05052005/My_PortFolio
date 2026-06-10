@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devendra Singh | B.Tech CSE-AIDS Portfolio</title>
+    <meta name="description" content="Professional student portfolio of Devendra Singh, B.Tech CSE-AIDS (Computer Science & Engineering - Artificial Intelligence & Data Science) student at Sagar Institute of Science and Technology.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Tech Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Canvas for neural network background -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">DEVENDRA.AIDS</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#playpen" class="nav-link">AI Playpen</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="tagline-container">
+                    <span class="hero-tag">B.TECH CSE (AI & DATA SCIENCE)</span>
+                </div>
+                <h1 class="hero-title">Hello, I'm <span class="highlight-text">Devendra Singh</span></h1>
+                <h2 class="hero-subtitle">
+                    <span class="typewriter" data-words='["AI/ML Developer", "Machine Learning Specialist", "AI & Data Science Student", "Full Stack AI Builder"]'></span>
+                </h2>
+                <p class="hero-description">
+                    B.Tech CSE-AIDS student at Sagar Institute of Science and Technology. Passionate about building stateful cognitive agents, Retrieval-Augmented Generation (RAG) pipelines, and intelligent ERP systems.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                    <a href="assets/resume.pdf" class="btn btn-secondary" target="_blank">
+                        <i class="fa-solid fa-file-pdf"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">01. About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I am a B.Tech student majoring in <strong>Computer Science & Engineering (Artificial Intelligence & Data Science)</strong> at Sagar Institute of Science and Technology (Class of 2027). My core academic focus lies at the intersection of machine learning algorithms, natural language processing, and modern system architectures.
+                        </p>
+                        <p>
+                            I design, build, and deploy agentic AI workflows using tools like <strong>LangGraph</strong> and <strong>LangChain</strong>, and have hands-on experience integrating multimodal vision models to digitize legacy information. I love building practical AI applications that solve complex scheduling, matching, and data retrieval problems.
+                        </p>
+                        <div class="education-card">
+                            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="edu-details">
+                                <h3>Bachelor of Technology - CSE-AIDS</h3>
+                                <p class="edu-inst">Sagar Institute of Science and Technology</p>
+                                <p class="edu-meta">2023 - 2027 | CGPA: 7.96 / 10.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-img-container">
+                        <div class="about-img-wrapper">
+                            <img src="assets/profile.png" alt="Devendra Singh" class="about-img" id="profile-img">
+                            <div class="about-img-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">02. Core Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-category-card">
+                        <div class="skill-card-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Programming & Web</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Python</span><span class="skill-percent">95%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="95%"></div></li>
+                            <li><span class="skill-name">SQL (SQLite / MySQL)</span><span class="skill-percent">85%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="85%"></div></li>
+                            <li><span class="skill-name">Django</span><span class="skill-percent">80%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="80%"></div></li>
+                            <li><span class="skill-name">HTML5 / CSS / Vanilla JS</span><span class="skill-percent">80%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="80%"></div></li>
+                        </ul>
+                    </div>
+
+                    <!-- Agentic AI & RAG -->
+                    <div class="skill-category-card">
+                        <div class="skill-card-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Agentic AI & LLMs</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">LangGraph (Stateful Agents)</span><span class="skill-percent">90%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="90%"></div></li>
+                            <li><span class="skill-name">LangChain Pipeline design</span><span class="skill-percent">88%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="88%"></div></li>
+                            <li><span class="skill-name">LLM APIs (Gemini, Llama, OpenAI)</span><span class="skill-percent">90%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="90%"></div></li>
+                            <li><span class="skill-name">FAISS / Vector Databases</span><span class="skill-percent">80%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="80%"></div></li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Science & NLP -->
+                    <div class="skill-category-card">
+                        <div class="skill-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Data Science & ML</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Natural Language Processing (NLP)</span><span class="skill-percent">85%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="85%"></div></li>
+                            <li><span class="skill-name">Scikit-Learn (ML Models)</span><span class="skill-percent">85%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="85%"></div></li>
+                            <li><span class="skill-name">Pandas & NumPy</span><span class="skill-percent">90%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="90%"></div></li>
+                            <li><span class="skill-name">Sentence Transformers</span><span class="skill-percent">80%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="80%"></div></li>
+                        </ul>
+                    </div>
+
+                    <!-- MLOps & Orchestration -->
+                    <div class="skill-category-card">
+                        <div class="skill-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Tools & Orchestration</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Celery & Redis</span><span class="skill-percent">80%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="80%"></div></li>
+                            <li><span class="skill-name">Git & GitHub</span><span class="skill-percent">90%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="90%"></div></li>
+                            <li><span class="skill-name">Streamlit UI Builder</span><span class="skill-percent">85%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="85%"></div></li>
+                            <li><span class="skill-name">Docker (Basic)</span><span class="skill-percent">65%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="65%"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">03. Selected Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <!-- Category Filtering Tabs -->
+                <div class="project-tabs">
+                    <button class="tab-btn active" data-filter="all">All Projects</button>
+                    <button class="tab-btn" data-filter="ml-dl">Agentic AI & NLP</button>
+                    <button class="tab-btn" data-filter="data-science">Data Science & ML</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 (LangGraph ERP) -->
+                    <div class="project-card" data-category="ml-dl">
+                        <div class="project-header">
+                            <div class="project-folder"><i class="fa-regular fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/devendrasingh05052005" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">ChronosAI: Academic ERP & Slot Optimizer</h3>
+                        <p class="project-desc">
+                            An autonomous, multi-tenant academic resource scheduling ERP that digitizes physical timetables using cloud multimodal vision models (Gemini & Llama 3.2 Vision). Leverages stateful LangGraph cognitive agents to handle natural language queries, execute database slot swaps, and trigger Celery-driven messaging integrations.
+                        </p>
+                        <div class="project-tags">
+                            <span>LangGraph</span>
+                            <span>Django</span>
+                            <span>Celery</span>
+                            <span>Redis</span>
+                            <span>Gemini API</span>
+                            <span>Groq</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (Resume Ranker) -->
+                    <div class="project-card" data-category="data-science">
+                        <div class="project-header">
+                            <div class="project-folder"><i class="fa-regular fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/devendrasingh05052005" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">AI Resume Ranker</h3>
+                        <p class="project-desc">
+                            Built an AI-powered resume screening system that parses PDF resumes against job descriptions, calculates contextual matching scores, identifies critical skill gaps, and ranks candidates dynamically.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Sentence Transformers</span>
+                            <span>Scikit-learn</span>
+                            <span>Streamlit</span>
+                            <span>Pandas</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (RAG Chatbot) -->
+                    <div class="project-card" data-category="ml-dl">
+                        <div class="project-header">
+                            <div class="project-folder"><i class="fa-regular fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/devendrasingh05052005" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Enterprise Knowledge Base Chatbot (RAG)</h3>
+                        <p class="project-desc">
+                            Designed a Retrieval-Augmented Generation chatbot that parses enterprise PDFs, structures texts, creates high-density vector indexes via FAISS, and serves accurate, context-aware answers with source references.
+                        </p>
+                        <div class="project-tags">
+                            <span>LangChain</span>
+                            <span>FAISS</span>
+                            <span>Hugging Face Embeddings</span>
+                            <span>OpenAI/Gemini API</span>
+                            <span>Streamlit</span>
+                            <span>PyPDF2</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Playpen Section -->
+        <section id="playpen" class="section playpen-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">04. AI Playpen: Linear Regression</h2>
+                    <div class="section-line"></div>
+                </div>
+                <p class="playpen-intro">
+                    Demonstrating a hands-on mathematical foundation. Click anywhere inside the canvas below to plot data points, and see the gradient descent algorithm fit a linear regression line ($\hat{y} = \theta_0 + \theta_1 x$) in real-time!
+                </p>
+                <div class="playpen-wrapper">
+                    <div class="canvas-container">
+                        <canvas id="regression-canvas" width="500" height="350"></canvas>
+                    </div>
+                    <div class="playpen-controls">
+                        <div class="stat-group">
+                            <span class="stat-label">Model Equation:</span>
+                            <span id="regression-equation" class="stat-value">y = 0.00x + 0.00</span>
+                        </div>
+                        <div class="stat-group">
+                            <span class="stat-label">R² Score (Goodness of Fit):</span>
+                            <span id="regression-r2" class="stat-value">0.00</span>
+                        </div>
+                        <div class="stat-group">
+                            <span class="stat-label">Data Points:</span>
+                            <span id="regression-count" class="stat-value">0</span>
+                        </div>
+                        <div class="control-buttons">
+                            <button id="clear-regression" class="btn btn-secondary">Clear Canvas</button>
+                            <button id="add-noise" class="btn btn-primary">Generate Sample Data</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section timeline-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">05. Timeline</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="timeline-container">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">June 2025 - Present</span>
+                            <h3 class="timeline-heading">AI Developer & Architecture Lead</h3>
+                            <h4 class="timeline-subheading">ChronosAI Timetable Scheduling Project</h4>
+                            <p>
+                                Designing slot-swapping architectures using LangGraph cognitive agents and Celery-driven notification pipelines to automate institutional schedule scheduling conflicts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Jan 2025 - May 2025</span>
+                            <h3 class="timeline-heading">NLP Developer</h3>
+                            <h4 class="timeline-subheading">AI Resume Ranker & Knowledge Base RAG Chatbot</h4>
+                            <p>
+                                Developed embeddings parsing matrices with sentence-transformers and semantic search querying with FAISS indices to score candidate fits and retrieve context-aware answers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - 2027</span>
+                            <h3 class="timeline-heading">B.Tech - Computer Science & Eng. (AI & DS)</h3>
+                            <h4 class="timeline-subheading">Sagar Institute of Science and Technology</h4>
+                            <p>
+                                Focusing on Neural Networks, Optimization Algorithms, Natural Language Processing, Computer Vision, Big Data, and core CSE subjects. Maintaining an overall academic CGPA of 7.96.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">06. Contact Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's build something intelligent.</h3>
+                        <p>
+                            I am actively looking for placement, job, and internship positions in Artificial Intelligence, Machine Learning, Data Science, and Software Engineering. Whether you want to discuss a project, interview me, or just talk tech, feel free to drop a message!
+                        </p>
+                        <ul class="contact-methods">
+                            <li>
+                                <a href="mailto:banad8640@gmail.com" class="contact-link">
+                                    <i class="fa-solid fa-envelope"></i> banad8640@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/devendrasingh05052005/" class="contact-link" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i> linkedin.com/in/devendrasingh05052005/
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/devendrasingh05052005" class="contact-link" target="_blank">
+                                    <i class="fa-brands fa-github"></i> github.com/devendrasingh05052005
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="61ec16eb-97d7-4b8d-a0b1-50705cc76fb9">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Your Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; <span id="current-year"></span> Devendra Singh. Built for placements & jobs.</p>
+            <div class="social-icons">
+                <a href="https://github.com/devendrasingh05052005" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/devendrasingh05052005/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
