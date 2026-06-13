@@ -114,16 +114,18 @@
                     <div class="section-line"></div>
                 </div>
                 <div class="skills-grid">
-                    <!-- Languages -->
+                    <!-- Languages & Frameworks -->
                     <div class="skill-category-card">
                         <div class="skill-card-icon"><i class="fa-solid fa-code"></i></div>
                         <h3>Programming & Web</h3>
                         <ul class="skills-list">
                             <li><span class="skill-name">Python</span><span class="skill-percent">95%</span></li>
                             <li class="skill-bar-wrapper"><div class="skill-bar" data-width="95%"></div></li>
+                            <li><span class="skill-name">Django & FastAPI</span><span class="skill-percent">88%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="88%"></div></li>
                             <li><span class="skill-name">SQL (SQLite / MySQL)</span><span class="skill-percent">85%</span></li>
                             <li class="skill-bar-wrapper"><div class="skill-bar" data-width="85%"></div></li>
-                            <li><span class="skill-name">Django</span><span class="skill-percent">80%</span></li>
+                            <li><span class="skill-name">C++</span><span class="skill-percent">80%</span></li>
                             <li class="skill-bar-wrapper"><div class="skill-bar" data-width="80%"></div></li>
                             <li><span class="skill-name">HTML5 / CSS / Vanilla JS</span><span class="skill-percent">80%</span></li>
                             <li class="skill-bar-wrapper"><div class="skill-bar" data-width="80%"></div></li>
@@ -146,13 +148,15 @@
                         </ul>
                     </div>
 
-                    <!-- Data Science & NLP -->
+                    <!-- Data Science & ML -->
                     <div class="skill-category-card">
                         <div class="skill-card-icon"><i class="fa-solid fa-chart-line"></i></div>
                         <h3>Data Science & ML</h3>
                         <ul class="skills-list">
                             <li><span class="skill-name">Natural Language Processing (NLP)</span><span class="skill-percent">85%</span></li>
                             <li class="skill-bar-wrapper"><div class="skill-bar" data-width="85%"></div></li>
+                            <li><span class="skill-name">TensorFlow</span><span class="skill-percent">80%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="80%"></div></li>
                             <li><span class="skill-name">Scikit-Learn (ML Models)</span><span class="skill-percent">85%</span></li>
                             <li class="skill-bar-wrapper"><div class="skill-bar" data-width="85%"></div></li>
                             <li><span class="skill-name">Pandas & NumPy</span><span class="skill-percent">90%</span></li>
@@ -162,7 +166,7 @@
                         </ul>
                     </div>
 
-                    <!-- MLOps & Orchestration -->
+                    <!-- Tools & Orchestration -->
                     <div class="skill-category-card">
                         <div class="skill-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
                         <h3>Tools & Orchestration</h3>
@@ -173,8 +177,36 @@
                             <li class="skill-bar-wrapper"><div class="skill-bar" data-width="90%"></div></li>
                             <li><span class="skill-name">Streamlit UI Builder</span><span class="skill-percent">85%</span></li>
                             <li class="skill-bar-wrapper"><div class="skill-bar" data-width="85%"></div></li>
+                            <li><span class="skill-name">MLflow</span><span class="skill-percent">80%</span></li>
+                            <li class="skill-bar-wrapper"><div class="skill-bar" data-width="80%"></div></li>
                             <li><span class="skill-name">Docker (Basic)</span><span class="skill-percent">65%</span></li>
                             <li class="skill-bar-wrapper"><div class="skill-bar" data-width="65%"></div></li>
+                        </ul>
+                    </div>
+
+                    <!-- CS Fundamentals -->
+                    <div class="skill-category-card">
+                        <div class="skill-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>CS Fundamentals</h3>
+                        <ul class="skills-list-simple">
+                            <li><i class="fa-solid fa-circle-check"></i> Data Structures & Algorithms (DSA)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Object Oriented Programming (OOP)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Database Management Systems (DBMS)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Operating Systems (OS)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Computer Networks (CN)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="skill-category-card">
+                        <div class="skill-card-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <h3>Certifications (Cisco)</h3>
+                        <ul class="skills-list-simple">
+                            <li><i class="fa-solid fa-award"></i> Python for Data Science</li>
+                            <li><i class="fa-solid fa-award"></i> Introduction to Data Science</li>
+                            <li><i class="fa-solid fa-award"></i> Introduction to Modern AI</li>
+                            <li><i class="fa-solid fa-award"></i> Data Analytics Essentials</li>
+                            <li><i class="fa-solid fa-award"></i> Introduction to Cybersecurity</li>
                         </ul>
                     </div>
                 </div>
@@ -197,7 +229,7 @@
                 </div>
 
                 <div class="projects-grid">
-                    <!-- Project 1 (LangGraph ERP) -->
+                    <!-- Project 1 (ChronosAI) -->
                     <div class="project-card" data-category="ml-dl">
                         <div class="project-header">
                             <div class="project-folder"><i class="fa-regular fa-folder-open"></i></div>
@@ -207,19 +239,20 @@
                         </div>
                         <h3 class="project-title">ChronosAI: Academic ERP & Slot Optimizer</h3>
                         <p class="project-desc">
-                            An autonomous, multi-tenant academic resource scheduling ERP that digitizes physical timetables using cloud multimodal vision models (Gemini & Llama 3.2 Vision). Leverages stateful LangGraph cognitive agents to handle natural language queries, execute database slot swaps, and trigger Celery-driven messaging integrations.
+                            An autonomous, multi-tenant academic resource scheduling ERP that digitizes physical timetables using cloud multimodal vision models. Built using FastAPI, OCR, and stateful LangGraph cognitive agents to handle natural language queries, execute database slot swaps, and orchestrate Celery-driven notifications.
                         </p>
                         <div class="project-tags">
+                            <span>FastAPI</span>
                             <span>LangGraph</span>
+                            <span>OCR</span>
                             <span>Django</span>
                             <span>Celery</span>
                             <span>Redis</span>
                             <span>Gemini API</span>
-                            <span>Groq</span>
                         </div>
                     </div>
 
-                    <!-- Project 2 (Resume Ranker) -->
+                    <!-- Project 2 (AI Resume Builder) -->
                     <div class="project-card" data-category="data-science">
                         <div class="project-header">
                             <div class="project-folder"><i class="fa-regular fa-folder-open"></i></div>
@@ -227,21 +260,21 @@
                                 <a href="https://github.com/devendrasingh05052005" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
-                        <h3 class="project-title">AI Resume Ranker</h3>
+                        <h3 class="project-title">AI Resume Builder</h3>
                         <p class="project-desc">
-                            Built an AI-powered resume screening system that parses PDF resumes against job descriptions, calculates contextual matching scores, identifies critical skill gaps, and ranks candidates dynamically.
+                            Developed an AI-powered recruitment platform using Django, NLP, and Gemini API that automated resume screening, reduced manual evaluation time by 80%, and enabled intelligent candidate matching and profile evaluation across 1000+ profiles.
                         </p>
                         <div class="project-tags">
+                            <span>Django</span>
+                            <span>NLP</span>
+                            <span>Gemini API</span>
                             <span>Python</span>
                             <span>Sentence Transformers</span>
                             <span>Scikit-learn</span>
-                            <span>Streamlit</span>
-                            <span>Pandas</span>
-                            <span>SQLite</span>
                         </div>
                     </div>
 
-                    <!-- Project 3 (RAG Chatbot) -->
+                    <!-- Project 3 (YouTube Video Assistant) -->
                     <div class="project-card" data-category="ml-dl">
                         <div class="project-header">
                             <div class="project-folder"><i class="fa-regular fa-folder-open"></i></div>
@@ -249,17 +282,17 @@
                                 <a href="https://github.com/devendrasingh05052005" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
-                        <h3 class="project-title">Enterprise Knowledge Base Chatbot (RAG)</h3>
+                        <h3 class="project-title">YouTube Video Assistant</h3>
                         <p class="project-desc">
-                            Designed a Retrieval-Augmented Generation chatbot that parses enterprise PDFs, structures texts, creates high-density vector indexes via FAISS, and serves accurate, context-aware answers with source references.
+                            Developed a RAG-powered chatbot using Streamlit, LangChain, FAISS, and LLMs that enabled bilingual Q&A over YouTube transcripts, achieving sub-3-second response times and supporting 100+ user queries per session.
                         </p>
                         <div class="project-tags">
+                            <span>Streamlit</span>
                             <span>LangChain</span>
                             <span>FAISS</span>
-                            <span>Hugging Face Embeddings</span>
-                            <span>OpenAI/Gemini API</span>
-                            <span>Streamlit</span>
-                            <span>PyPDF2</span>
+                            <span>RAG</span>
+                            <span>LLMs</span>
+                            <span>Python</span>
                         </div>
                     </div>
 
@@ -331,9 +364,9 @@
                         <div class="timeline-content">
                             <span class="timeline-date">Jan 2025 - May 2025</span>
                             <h3 class="timeline-heading">NLP Developer</h3>
-                            <h4 class="timeline-subheading">AI Resume Ranker & Knowledge Base RAG Chatbot</h4>
+                            <h4 class="timeline-subheading">AI Resume Builder & YouTube Video Assistant</h4>
                             <p>
-                                Developed embeddings parsing matrices with sentence-transformers and semantic search querying with FAISS indices to score candidate fits and retrieve context-aware answers.
+                                Developed Django recruitment screening engines and Streamlit-based YouTube Video Assistant RAG pipelines, parsing candidate resumes and bilingual transcripts using LangChain and FAISS.
                             </p>
                         </div>
                     </div>
@@ -368,6 +401,11 @@
                             I am actively looking for placement, job, and internship positions in Artificial Intelligence, Machine Learning, Data Science, and Software Engineering. Whether you want to discuss a project, interview me, or just talk tech, feel free to drop a message!
                         </p>
                         <ul class="contact-methods">
+                            <li>
+                                <a href="tel:+918719966101" class="contact-link">
+                                    <i class="fa-solid fa-phone"></i> +91 87199 66101
+                                </a>
+                            </li>
                             <li>
                                 <a href="mailto:banad8640@gmail.com" class="contact-link">
                                     <i class="fa-solid fa-envelope"></i> banad8640@gmail.com
