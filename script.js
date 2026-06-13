@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Current Year in Footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
+    // Cache-buster for Resume PDF (forces browser to load the latest version)
+    const resumeLinks = document.querySelectorAll('a[href^="assets/resume.pdf"]');
+    resumeLinks.forEach(link => {
+        link.href = `assets/resume.pdf?v=${new Date().getTime()}`;
+    });
+
     // 2. Mobile Nav Toggle
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
     const navLinks = document.querySelector('.nav-links');
