@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         draw() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fillStyle = '#0055ff';
+            ctx.fillStyle = '#6366f1';
             ctx.fill();
         }
     }
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (distance < 110) {
                     let opacity = (1 - (distance / 110)) * 0.15;
-                    ctx.strokeStyle = `rgba(0, 85, 255, ${opacity})`;
+                    ctx.strokeStyle = `rgba(99, 102, 241, ${opacity})`;
                     ctx.lineWidth = 1;
                     ctx.beginPath();
                     ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
@@ -353,10 +353,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (points.length >= 2) {
             const model = calculateRegression();
             if (model) {
-                regCtx.strokeStyle = '#0055ff';
+                regCtx.strokeStyle = '#6366f1';
                 regCtx.lineWidth = 2.5;
                 regCtx.shadowBlur = 10;
-                regCtx.shadowColor = 'rgba(0, 85, 255, 0.5)';
+                regCtx.shadowColor = 'rgba(99, 102, 241, 0.5)';
                 regCtx.beginPath();
                 
                 // Calculate endpoints of line spanning canvas width
@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < points.length; i++) {
             regCtx.beginPath();
             regCtx.arc(points[i].x, points[i].y, 6, 0, Math.PI * 2);
-            regCtx.fillStyle = '#00e5ff';
+            regCtx.fillStyle = '#06b6d4';
             regCtx.fill();
             regCtx.strokeStyle = '#ffffff';
             regCtx.lineWidth = 1.5;
