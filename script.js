@@ -514,4 +514,48 @@ document.addEventListener('DOMContentLoaded', () => {
         const headerHeight = document.querySelector('.navbar').clientHeight;
         return headerHeight + (height * 0.25);
     }
+
+    // 10. Premium 3D Perspective Tilt and Glowing Border Effect
+    const tiltCards = document.querySelectorAll('.project-card, .cert-card, .skill-category-card, .about-img-wrapper');
+    
+    tiltCards.forEach(card => {
+        card.style.transition = 'transform 0.15s ease, box-shadow 0.15s ease';
+        
+        card.addEventListener('mousemove', e => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left; 
+            const y = e.clientY - rect.top;  
+            
+            const xc = rect.width / 2;
+            const yc = rect.height / 2;
+            
+            // Calculate tilt angle based on mouse distance from card center (max 8 degrees for clean professional feel)
+            const angleX = (yc - y) / 15; 
+            const angleY = (x - xc) / 15;
+            
+            card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) translateY(-8px)`;
+            
+            // Cast dynamic shadow glow towards opposite direction of cursor
+            card.style.boxShadow = `${-angleY * 1.5}px ${angleX * 1.5}px 30px rgba(6, 182, 212, 0.25), 0 12px 24px rgba(0,0,0,0.35)`;
+            
+            // Subtly raise the images for extra 3D parallax depth
+            const img = card.querySelector('.cert-img, .project-img, .about-img');
+            if (img) {
+                img.style.transition = 'transform 0.1s ease';
+                img.style.transform = 'translateZ(18px) scale(1.02)';
+            }
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transition = 'transform 0.5s ease, box-shadow 0.5s ease';
+            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+            card.style.boxShadow = 'none';
+            
+            const img = card.querySelector('.cert-img, .project-img, .about-img');
+            if (img) {
+                img.style.transition = 'transform 0.5s ease';
+                img.style.transform = 'translateZ(0) scale(1)';
+            }
+        });
+    });
 });

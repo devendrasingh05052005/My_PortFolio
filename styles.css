@@ -434,6 +434,8 @@ ul {
     max-width: 300px;
     width: 100%;
     aspect-ratio: 1;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 .about-img {
@@ -483,6 +485,8 @@ ul {
     padding: 30px;
     backdrop-filter: blur(12px);
     transition: var(--transition-smooth);
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 .skill-category-card:hover {
@@ -598,6 +602,8 @@ ul {
     display: flex;
     flex-direction: column;
     transition: var(--transition-smooth);
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 .project-card:hover {
@@ -1007,6 +1013,8 @@ ul {
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(12px);
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 .cert-card:hover {
